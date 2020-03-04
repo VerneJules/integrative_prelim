@@ -28,7 +28,7 @@
 	$valid = false;
 	if(strlen($student_id)>0){
 		$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-		$current_path = pathinfo($actual_link)["dirname"];
+		$current_path = (substr($actual_link,-1) == "/")?$actual_link:pathinfo($actual_link)["dirname"];
 		//code to validate start
 		$student_nickname = "";
 		$student_fullname = "";
