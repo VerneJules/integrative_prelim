@@ -197,6 +197,13 @@
 		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 		xhr.send("student_id"+"="+document.getElementById("student_id").value+"&"+"code"+"="+document.getElementById("code").value);
 	}
+	
+	var search_box = document.getElementById("search");
+	if (search_box.addEventListener) {
+		search_box.addEventListener('keydown', function(e){ if(e.keyCode == 13){ event.preventDefault(); this.dispatchEvent(new Event("change")); } } );
+	} else if (search_box.attachEvent) {
+		search_box.attachEvent('keydown', function(e){ if(e.keyCode == 13){ event.preventDefault(); this.dispatchEvent(new Event("change"));} } );
+	}
         // ]]>
         </script>
 		
