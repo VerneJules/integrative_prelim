@@ -88,11 +88,13 @@
 		<div id="instructions">
 			<p>The form below the blue line is a Contact Lookup Tool. The application has to connect to the webservice "contact_ws.php".</p>
 			<p>Connecting to "contact_ws.php" as is will provide you all the data of contacts. But adding a "search" parameter (either via GET or POST method) will filter the contacts in the array.</p>
+			<p>Refer to this link for the documentation of this web service: <a href="https://documenter.getpostman.com/view/1917531/SzRuZXuv?version=latest">https://documenter.getpostman.com/view/1917531/SzRuZXuv?version=latest</a></p>
 			<p>Write a script that will connect to "contact_ws.php". List all the contacts by nickname in the unordered list element (id ="contacts"). As you type a text in the search box (id="search"), the contacts should be filtered based on the search term. If a contact is clicked, its details should reflect the values in the form.</p>
 			<p>The following ID's are used in the form below.</p>
 			<ul>
 				<li>Nickname: nickname</li>
 				<li>Fullname: fullname</li>
+				<li>Image: photo</li>
 				<li>Birthday: bday</li>
 				<li>Gender: gender</li>
 				<li>Address: address</li>
