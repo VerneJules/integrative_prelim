@@ -41,6 +41,7 @@ ul.contact_list{
 	color: black;
 	text-align: center;
 	padding-top: 10px;
+	text-transform: capitalize;
 }
 
 .contact_list li:hover{
@@ -62,4 +63,8 @@ textarea{
 
 hr{
 	border: 1.5px solid blue;
+}
+
+#nickname, #fullname, #bday, #gender, #address{
+	text-transform: capitalize;
 }
